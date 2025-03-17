@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Portfolio - FxTech</title>
+        <link href="../static/css/main.css" rel="stylesheet">
+        <link href="../static/css/custom.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="{{ url_for('static', filename='dist/output.css') }}" rel="stylesheet">
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+
+
+        
+    </head>
+
+    
+    <body class="overflow-x-hidden font-Outfit leading-8 bg-gray-100 text-black">
+        
+        <nav class="w-full fixed px-5 lg:px-8 lg:px[8%] py-4 flex item-center justify-between z-50">
+            <div class="flex items-center">
+            <img src="/static/images/fxtech.png" alt="Logo" class="w-20" cursor-pointer mr-14>
+            <div>
+                <span class="font-mono">King Tech</span>
+                <p class="text-sm mt-0.5 text-gray-400">A.I Engineer</p>
+            </div>
+            </div>
+            <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white
+             shadow-sm bg-opacity-50 font-mono">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+
+           <div class="flex items-center gap-4">
+           
+
+            <a href="#contact"
+            class="hidden lg:flex items-center gap-3 px-10 py-2.5 border
+            border-gray-500 rounded-full ml-4 font-mono">
+            Contact<img src="/static/images/rightup.png" alt="" class="w-3"></a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="/static/images/menu.png" alt="" class="w-6">
+            </button>
+
+           </div>
+
+    <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64
+    top-0 bottom-0 w-64 z-50 h-50 h-screen bg-rose-50 transition duration-500">
+
+
+    <div class="absolute right-6 top-6" onclick="closeMenu()">
+        <img src="/static/images/close.png" class="w-5 cursor-pointer">
+    </div>
+        <li><a href="#top" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About me</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+    </ul>    
+
+</nav>
+
+<!-- ----header----- -->
+
+<div class="w-11/12 max-w-3x1 text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-40">
+
+
+    <div class="mt-[40px] flex justify-center">
+        <div class="flex items-center bg-white text-black 
+            px-3 py-1 rounded-full text-sm font-semibold shadow-md border">
+    
+            <!-- Green Dot -->
+            <div class="w-1.5 h-1.5 bg-green-800 rounded-full mr-2"></div>
+    
+            <span>Open to Work</span>
+    
+            <!-- Triangle -->
+            <div class="absolute left-0 -ml-2 w-3 h-3 bg-white rotate-45 rounded-sm border border-gray-300"></div>
+        </div>
+    </div><br>
+    
+    
+
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-mono"></h3>
+
+    <h1 class="font-bold text-3xl sm:text-6xl lg:text-[18px] font-serif">
+        Are You Looking to hire! an experience A.I Researcher</h1>
+
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-mono"></h3>
+
+    <p class="max-w-2xl mx-auto font-mono lg:text-[14px]">I am Elugwu Hycienth Chibueze a Senior A.I 
+        Researcher and Machine Learning Engineer 
+        i have worked in so many projects likes house cladsifcation,
+        Iris Classification, Brain Tumor detection and so many more
+         with three and more years experience in companies!.</p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact"
+            class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] 
+            to-[#da7d20] text-white flex items-center gap-2">
+            contact me <img src="/static/images/rightarrow.png" alt="" class="w-4"></a>
+
+            <a href="/static/images/Resume.pdf" download
+            class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2">
+            my resume <img src="/static/images/download.png" alt="" class="w-4"></a>
+        </div>
+</div>
+
+<!-- ----about me----- -->
+
+<div id="about" class="w-full px-[10%] py-20 mt-10 scroll-mt-10">
+  <h5 class="text-center mb-2 text-lg font-mono">Introduction</h5>
+    <h2 class="text-center text-5xl font-mono">About Me</h2>
+
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+            <img src="/static/images/fx1.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+        </div>
+        <div class='flex-1'>
+            <p class="mb-10 max-w-2xl font-mono">
+                I'm an AI researcher with over four years of experience in machine learning and data analytics.
+                I specialize in building predictive models and analyzing complex datasets to uncover valuable 
+                insights. Passionate about leveraging AI to solve real-world problems, I continuously strive to 
+                advance in this ever-evolving field.
+            </p>
+
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                  <img src="/static/images/code.png" alt="" class="w-20 h-20 object-cover mt-3 mx-auto">
+                  <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                  <p class="text-gray-600 text-sm">HTML, CSS, Javascript.</p>
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                  <img src="/static/images/programming.png" alt="" class="w-20 h-20 object-cover mt-3 mx-auto">
+                  <h3 class="my-4 font-semibold text-gray-700">Programming</h3>
+                  <p class="text-gray-600 text-sm">Python, DeepLearning.</p>
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                  <img src="/static/images/ai.jpeg" alt="" class="w-20 h-20 object-cover mt-3 mx-auto">
+                  <h3 class="my-4 font-semibold text-gray-700">Technologies</h3>
+                  <p class="text-gray-600 text-sm">A.I, Machine Learning, Data Science, Data analytics.</p>
+                </li>
+              </ul>
+              
+
+    <h4 class="my-2 text-gray-700 font-semibold text-xs">Tools I Use</h4>
+
+    <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-4 md:gap-6">
+    
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/vscode.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/pt.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/js.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/ai.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/github.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400
+     rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/gt.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/fl.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/sq.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/heroku.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+    <li class="flex items-center justify-center w-full aspect-square border border-gray-400 
+    rounded-lg cursor-pointer hover:-translate-y-1 duration-500"> 
+        <img src="/static/images/aws.jpeg" alt="" class="w-10 sm:w-12 md:w-14 object-contain">
+    </li>
+</ul>
+
+              
+              
+        </div>
+    </div>
+</div>
+
+
+<!-- ----services----- -->
+
+<div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg"><span class="font-bold font-mono">Hire!</span>Me</h4>
+    <h2 class="text-center text-5xl font-mono">My Services</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-mono">
+        I'm an AI researcher with over four years of experience in machine learning and data analytics.
+        I specialize in building predictive models and analyzing complex datasets to uncover valuable 
+        insights. Passionate about leveraging AI to solve real-world problems, I continuously strive to 
+        advance in this ever-evolving field.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+        <!-- Card 1 -->
+        <div class="border border-gray-400 rounded-lg p-8 hover:shadow-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="/static/images/fxtech.png" alt="" class="w-10 mb-4 mx-auto">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">A.I Research</h3>
+            <p class="text-sm text-gray-600 leading-6 mb-4">AI research focuses on developing intelligent systems that can learn, 
+                adapt, and solve complex problems. It combines data, algorithms, 
+                and computing power to advance fields like machine learning, robotics,
+                and natural language processing.</p>
+            <a href="" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+                Read More <img src="/static/images/rightarrow.png" alt="" class="w-4">
+            </a>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="border border-gray-400 rounded-lg p-8 hover:shadow-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="/static/images/ml.jpeg" alt="" class="w-10 mb-4 mx-auto">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">Machine Learning</h3>
+            <p class="text-sm text-gray-600 leading-6 mb-4">Machine learning is a branch of AI that enables computers 
+                to learn from data and improve their performance over time. 
+                It uses algorithms to identify patterns and make predictions 
+                without being explicitly programmed.</p>
+            <a href="" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+                Read More <img src="/static/images/rightarrow.png" alt="" class="w-4">
+            </a>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="border border-gray-400 rounded-lg p-8 hover:shadow-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="/static/images/wb.jpeg" alt="" class="w-10 mb-4 mx-auto">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">Web Deployment</h3>
+            <p class="text-sm text-gray-600 leading-6 mb-4">Deploying to the web with Flask involves creating a web 
+                application using Python, then making it accessible online. It allows developers to 
+                build and host dynamic websites or APIs easily on servers or cloud platforms.</p>
+            <a href="" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+                Read More <img src="/static/images/rightarrow.png" alt="" class="w-4">
+            </a>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="border border-gray-400 rounded-lg p-8 hover:shadow-lg cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <img src="/static/images/cloud.png" alt="" class="w-10 mb-4 mx-auto">
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">Cloud Deployment</h3>
+            <p class="text-sm text-gray-600 leading-6 mb-4">Deploying to the cloud with platforms like Heroku, 
+                Render, or AWS allows you to host and scale applications without managing physical servers. 
+                These services provide easy deployment, automatic scaling, and reliable performance for web
+                 apps and APIs.</p>
+            <a href="" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+                Read More <img src="/static/images/rightarrow.png" alt="" class="w-4">
+            </a>
+        </div>
+    </div>
+    
+    </div>
+</div>
+
+<!-- ----Projects----- -->
+
+<div>
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-bold">A.I Researcher & Machine Learning with Experience</h4>
+        <h2 class="text-center text-5xl font-mono">My Projects</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            A.I Researcher & Machine Learning Engineer with hands-on 
+            experience in developing and deploying machine learning models.
+             My projects include Iris Species Classification, House Price Prediction,
+              Spam Detection, and Breast Cancer Diagnosis, showcasing my expertise 
+              in data analysis, model building, and problem-solving. Passionate about
+               leveraging AI to create impactful solutions for real-world challenges.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10">
+            <!-- Card 1 -->
+            <div class="aspect-square bg-[url('/static/images/AI1.PNG')]
+             bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 h-20 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2
+                 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm mt-6">Breast Cancer</h2>
+                        <p class="text-sm text-gray-700 mb-6">Deployed with Flask</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square
+                     flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 
+                     transition">
+                        <img src="/static/images/sendicon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="aspect-square bg-[url('/static/images/AI3.PNG')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 h-20 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm mt-6">Spam Detections</h2>
+                        <p class="text-sm text-gray-700 mb-6">Deployed with Flask</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="/static/images/sendicon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="aspect-square bg-[url('/static/images/AI4.PNG')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 h-20 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm mt-6">House Price</h2>
+                        <p class="text-sm text-gray-700 mb-6">Deployed with Flask</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="/static/images/sendicon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="aspect-square bg-[url('/static/images/AI6.PNG')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 h-20 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm mt-6">Iris Species</h2>
+                        <p class="text-sm text-gray-700 mb-6">Deployed with Flask</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="/static/images/sendicon.png" alt="" class="w-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700
+        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] 
+        duration-500">Show More
+        <img src="/static/images/rightarrow.png" alt="" class="w-4">
+    </a>
+</div>
+
+<!-- ----Contact Me----- -->
+
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url()]
+bg-no-repeat bg-[length:90%_auto] bg-center">
+    <h4 class="text-center mb-2 text-lg">Reach Me <span class="font-bold font-mono">out!</span></h4>
+        <h2 class="text-center text-5xl font-mono">Get In Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">
+            Let’s collaborate and bring innovative ideas to life! Whether you’re looking to discuss AI,
+             machine learning, or potential projects, I’m just a message away. Reach out—let’s create 
+             something amazing together!
+        </p>
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+            <input type="hidden" name="access_key" value="b4c00e76-b1d6-40fe-ab31-21bf4a3f194b">
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name" 
+                class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" 
+                required name="name">
+                
+                <input type="text" placeholder="Enter your email" 
+                class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+                 required name="email">
+            </div>
+        
+            <textarea rows="6" placeholder="Enter your message" 
+            class="w-full p-4 outline-none border-[0.5px]
+             border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
+            
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 
+            bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">
+                Submit now
+                <img src="/static/images/rightarrow.png" alt="" class="w-4">
+            </button>
+        </form>
+        
+</div>
+
+<!-- ----Footer----- -->
+<hr class="border-t">
+<div class="mt-20">
+    <div class="text-center">
+        <img src="/static/images/fxtech.png" alt="FXTech Logo" class="w-24 mx-auto mb-4"> <!-- Reduced logo size -->
+        <div class="w-max flex items-center gap-3 mx-auto mb-4">
+            <img src="/static/images/em.jpeg" alt="Email Icon" class="w-8 h-8 rounded-full border-2 border-gray-200">
+            <span class="text-lg text-gray-800 font-medium">hycienthbueze@gmail.com</span>
+        </div>
+    
+    </div>
+    
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t
+    border-gray-400 mx-[10%] mt-12 py-6">
+        <p>@ 2025 FxTech Hycienth. All rights reserved.</p>
+        <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+            <li><a href="https://github.com/centbueze" class="social-link github"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/hycienth-Chibueze" class="social-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/centbueze?" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+        
+    </div>
+</div>
+<hr class="border-1.4 border-black">
+<script src="tailwind.config.js"></script>
+<script src="/static/script.js"></script>
+</body>
+</html>
